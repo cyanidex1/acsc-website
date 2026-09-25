@@ -51,6 +51,43 @@ export default function Footer() {
           </div>
         </div>
 
+        <div className="max-w-5xl mx-auto border-t border-black/15 py-6 flex flex-col sm:flex-row sm:items-center justify-between gap-5">
+          <div className="font-terminal text-xs uppercase tracking-[0.25em] opacity-40">
+            Supported by
+            <span className="block normal-case tracking-[0.15em] mt-1.5 opacity-80">
+              Office of Student Affairs · American International University-Bangladesh
+            </span>
+          </div>
+          <div className="flex items-center gap-4">
+            <a
+              href="https://www.aiub.edu/offices/osa"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Office of Student Affairs, AIUB"
+              className="bg-white/70 border border-black/15 p-2 hover:border-black/50 transition-colors"
+            >
+              <img
+                src={`${import.meta.env.BASE_URL}images/osa-logo.png`}
+                alt="OSA — Office of Student Affairs, AIUB"
+                className="h-10 w-auto rounded-md"
+              />
+            </a>
+            <a
+              href="https://www.aiub.edu"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="American International University-Bangladesh"
+              className="bg-white/70 border border-black/15 p-2 hover:border-black/50 transition-colors"
+            >
+              <img
+                src={`${import.meta.env.BASE_URL}images/aiub-logo.svg`}
+                alt="American International University-Bangladesh"
+                className="h-10 w-auto"
+              />
+            </a>
+          </div>
+        </div>
+
         <div className="max-w-5xl mx-auto border-t border-black/15 py-6 flex items-center justify-between font-terminal text-xs opacity-50">
           <span>© 2026 ACSC / AIUB Cybersecurity Club</span>
           <a
