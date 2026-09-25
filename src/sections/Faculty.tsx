@@ -24,7 +24,7 @@ export default function Faculty() {
     <section id="faculty" className="px-6 md:px-12 py-24">
       <div className="max-w-5xl mx-auto">
         <p className="font-terminal text-xs uppercase tracking-[0.25em] opacity-40 mb-3">
-          04 / Faculty
+          03 / Faculty
         </p>
         <h2 className="ghost-heading mb-10">THE ADVISORS.</h2>
 

@@ -3,8 +3,8 @@ import { useEffect, useState } from "react"
 const LINKS = [
   { href: "#about", label: "about" },
   { href: "#activities", label: "activities" },
-  { href: "#team", label: "team" },
   { href: "#faculty", label: "faculty" },
+  { href: "#team", label: "team" },
   { href: "#join", label: "join" },
 ]
 
@@ -25,15 +25,20 @@ export default function Navbar() {
     >
       <div className="max-w-[1388px] mx-auto px-6 md:px-12 h-14 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-2.5 group">
-          <span className="relative w-8 h-8 rounded-full overflow-hidden bg-ink shrink-0">
+          <span className="relative w-9 h-9 rounded-full overflow-hidden bg-ink shrink-0">
             <video
               src={`${import.meta.env.BASE_URL}images/hero-loop.mp4`}
-              className="w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-cover scale-[1.6] animate-spin-slow"
               autoPlay
               loop
               muted
               playsInline
               aria-hidden="true"
+            />
+            <img
+              src={`${import.meta.env.BASE_URL}images/acsc-logo.png`}
+              alt="ACSC club logo"
+              className="absolute inset-0 w-full h-full object-contain p-1 invert"
             />
           </span>
           <span className="font-terminal font-bold text-sm tracking-widest uppercase">

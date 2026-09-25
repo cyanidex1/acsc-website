@@ -84,7 +84,7 @@ export default function Team() {
     <section id="team" className="px-6 md:px-12 py-24">
       <div className="max-w-5xl mx-auto">
         <p className="font-terminal text-xs uppercase tracking-[0.25em] opacity-40 mb-3">
-          03 / Team
+          04 / Team
         </p>
         <h2 className="ghost-heading mb-10">THE OPERATORS.</h2>
 
