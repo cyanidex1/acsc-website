@@ -41,6 +41,20 @@ export default function Join() {
             </li>
           </ul>
 
+          <div className="mt-10 bg-ink text-paper p-5">
+            <p className="font-terminal text-xs uppercase tracking-widest opacity-50 mb-3">
+              // now recruiting
+            </p>
+            <ul className="space-y-1.5 font-terminal text-sm">
+              <li><span className="text-term mr-2">»</span>Media Secretary</li>
+              <li><span className="text-term mr-2">»</span>Photographer</li>
+              <li><span className="text-term mr-2">»</span>Graphics Designer</li>
+            </ul>
+            <p className="font-terminal text-[11px] opacity-60 mt-3 leading-relaxed">
+              Mention the role you're applying for in the request form or in your email.
+            </p>
+          </div>
+
           <div className="mt-10 border-t border-black/15 pt-6">
             <p className="font-terminal text-xs uppercase tracking-widest opacity-40 mb-4">
               Membership guidelines
