@@ -34,6 +34,7 @@ const FACULTY = [
     email: "manirul@aiub.edu",
     profile: "https://www.aiub.edu/faculty-list/faculty-profile?q=manirul",
     tag: "supervisor",
+    lead: true,
   },
 ]
 
@@ -48,8 +49,12 @@ export default function Faculty() {
 
         <div className="grid md:grid-cols-2 gap-4 md:gap-5">
           {FACULTY.map((f, i) => (
-            <div key={f.email} className="group">
-              <div className="relative overflow-hidden flex flex-col justify-between p-4 md:p-5 h-56 md:h-60 bg-ink">
+            <div key={f.email} className={f.lead ? "group md:col-span-2" : "group"}>
+              <div
+                className={`relative overflow-hidden flex flex-col justify-between p-4 md:p-5 h-56 md:h-60 ${
+                  f.lead ? "bg-ink border-2 border-[#00ff00]" : "bg-ink"
+                }`}
+              >
                 <div className="flex items-start justify-between">
                   <span className="font-terminal text-[10px] text-white/30 group-hover:text-term transition-colors duration-300">
                     /{String(i + 1).padStart(2, "0")}
