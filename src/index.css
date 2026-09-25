@@ -32,11 +32,13 @@
 
   html {
     scroll-behavior: smooth;
+    overflow-x: clip;
   }
 
   body {
     @apply bg-background text-foreground antialiased;
     font-family: "IBM Plex Sans", -apple-system, sans-serif;
+    overflow-x: clip;
   }
 
   ::selection {
