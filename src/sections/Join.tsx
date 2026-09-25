@@ -13,7 +13,7 @@ export default function Join() {
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-14 md:gap-20">
         <div>
           <p className="font-terminal text-xs uppercase tracking-[0.25em] opacity-40 mb-3">
-            04 / Join
+            05 / Join
           </p>
           <h2 className="ghost-heading mb-8">REQUEST<br />ACCESS.</h2>
           <p className="text-lg leading-relaxed text-black/70 max-w-md">
@@ -49,6 +49,7 @@ export default function Join() {
               <li>» Members are encouraged to actively participate in events, challenges and training programs.</li>
               <li>» An executive committee is formed from dedicated, skilled students willing to lead initiatives.</li>
               <li>» Certificates are awarded for contribution, leadership and successful completion of tenure.</li>
+              <li>» Members are encouraged to develop their technical and soft skills through club activities and training.</li>
             </ul>
           </div>
         </div>
