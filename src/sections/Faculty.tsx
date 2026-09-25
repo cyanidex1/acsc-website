@@ -1,5 +1,15 @@
 const FACULTY = [
   {
+    name: "Md. Manirul Islam",
+    role: "Associate Professor · Director, ICE & IT (Network Operations)",
+    dept: "Department of Computer Science",
+    desc: "Club supervisor — oversees the club's activities and connects members with certification pathways through the Institute of Continuing Education.",
+    email: "manirul@aiub.edu",
+    profile: "https://www.aiub.edu/faculty-list/faculty-profile?q=manirul",
+    tag: "supervisor",
+    lead: true,
+  },
+  {
     name: "Rifat Tasnim Anannya",
     role: "Assistant Professor",
     dept: "Department of Computer Science",
@@ -26,16 +36,6 @@ const FACULTY = [
     profile: "https://www.aiub.edu/faculty-list/faculty-profile?q=sajid",
     tag: "advisor-3",
   },
-  {
-    name: "Md. Manirul Islam",
-    role: "Associate Professor · Director, ICE & IT (Network Operations)",
-    dept: "Department of Computer Science",
-    desc: "Club supervisor — oversees the club's activities and connects members with certification pathways through the Institute of Continuing Education.",
-    email: "manirul@aiub.edu",
-    profile: "https://www.aiub.edu/faculty-list/faculty-profile?q=manirul",
-    tag: "supervisor",
-    lead: true,
-  },
 ]
 
 export default function Faculty() {
@@ -47,9 +47,9 @@ export default function Faculty() {
         </p>
         <h2 className="ghost-heading mb-10">THE MENTORS.</h2>
 
-        <div className="grid md:grid-cols-2 gap-4 md:gap-5">
+        <div className="grid md:grid-cols-6 gap-4 md:gap-5">
           {FACULTY.map((f, i) => (
-            <div key={f.email} className={f.lead ? "group md:col-span-2" : "group"}>
+            <div key={f.email} className={f.lead ? "group col-span-full md:col-span-6" : "group md:col-span-2"}>
               <div
                 className={`relative overflow-hidden flex flex-col justify-between p-4 md:p-5 h-56 md:h-60 ${
                   f.lead ? "bg-ink border-2 border-[#00ff00]" : "bg-ink"
