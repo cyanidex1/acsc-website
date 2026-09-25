@@ -17,6 +17,24 @@ const FACULTY = [
     profile: "https://www.aiub.edu/faculty-list/faculty-profile?q=mazid",
     tag: "advisor-2",
   },
+  {
+    name: "Md Sajid Bin-Faisal",
+    role: "Assistant Professor",
+    dept: "Department of Computer Science",
+    desc: "Mentors technical workshops and research circles, with a research focus on blockchain algorithms and applied security.",
+    email: "sajid@aiub.edu",
+    profile: "https://www.aiub.edu/faculty-list/faculty-profile?q=sajid",
+    tag: "advisor-3",
+  },
+  {
+    name: "Md. Manirul Islam",
+    role: "Associate Professor · Director, ICE & IT (Network Operations)",
+    dept: "Department of Computer Science",
+    desc: "Club supervisor — oversees the club's activities and connects members with certification pathways through the Institute of Continuing Education.",
+    email: "manirul@aiub.edu",
+    profile: "https://www.aiub.edu/faculty-list/faculty-profile?q=manirul",
+    tag: "supervisor",
+  },
 ]
 
 export default function Faculty() {
@@ -26,7 +44,7 @@ export default function Faculty() {
         <p className="font-terminal text-xs uppercase tracking-[0.25em] opacity-40 mb-3">
           03 / Faculty
         </p>
-        <h2 className="ghost-heading mb-10">THE ADVISORS.</h2>
+        <h2 className="ghost-heading mb-10">THE MENTORS.</h2>
 
         <div className="grid md:grid-cols-2 gap-4 md:gap-5">
           {FACULTY.map((f, i) => (
@@ -77,7 +95,7 @@ export default function Faculty() {
         </div>
 
         <p className="font-terminal text-xs opacity-40 mt-8">
-          // faculty advisors, American International University-Bangladesh
+          // club mentors & supervisor, American International University-Bangladesh
         </p>
       </div>
     </section>
