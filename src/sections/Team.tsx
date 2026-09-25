@@ -79,6 +79,24 @@ const COMMITTEE = [
   },
 ]
 
+const OPEN_ROLES = [
+  {
+    title: "Media Secretary",
+    blurb: "Runs announcements, covers club news, and keeps the feed alive.",
+    tag: "open-media",
+  },
+  {
+    title: "Photographer",
+    blurb: "Owns the lens at every event, workshop, and competition.",
+    tag: "open-photo",
+  },
+  {
+    title: "Graphics Designer",
+    blurb: "Designs posters, banners, and the club's visual identity.",
+    tag: "open-design",
+  },
+]
+
 export default function Team() {
   return (
     <section id="team" className="px-6 md:px-12 py-24">
@@ -125,6 +143,39 @@ export default function Team() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="mt-12">
+          <p className="font-terminal text-xs uppercase tracking-[0.25em] opacity-40 mb-4">
+            // open positions
+          </p>
+          <div className="grid sm:grid-cols-3 gap-4 md:gap-5">
+            {OPEN_ROLES.map((r, i) => (
+              <div key={r.tag} className="group">
+                <div className="relative overflow-hidden flex flex-col justify-between p-4 h-32 bg-ink border border-dashed border-term/50">
+                  <div className="flex items-start justify-between">
+                    <span className="font-terminal text-[10px] text-white/30 group-hover:text-term transition-colors duration-300">
+                      /R-{String(i + 1).padStart(2, "0")}
+                    </span>
+                    <span className="font-terminal text-[10px] text-term opacity-0 group-hover:opacity-70 transition-opacity duration-300">
+                      uid=0({r.tag})
+                    </span>
+                  </div>
+                  <div>
+                    <div className="font-terminal text-sm text-paper leading-snug">
+                      {r.title}
+                    </div>
+                    <div className="font-terminal text-[11px] text-term opacity-80 mt-1 tracking-wider">
+                      {r.blurb}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <p className="font-terminal text-xs opacity-40 mt-4">
+            // apply via the join form — mention the role you're applying for
+          </p>
         </div>
 
         <p className="font-terminal text-xs opacity-40 mt-8">

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import GlobeIcon from "@/components/GlobeIcon"
 
 const LINKS = [
   { href: "#about", label: "about" },
@@ -25,12 +26,7 @@ export default function Navbar() {
     >
       <div className="max-w-[1388px] mx-auto px-6 md:px-12 h-14 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-2.5 group">
-          <img
-            src={`${import.meta.env.BASE_URL}images/globe-only.png`}
-            alt="ACSC globe"
-            className="w-8 h-8 animate-spin-slow"
-            style={{ animationDuration: "14s" }}
-          />
+          <GlobeIcon className="w-8 h-8" />
           <span className="font-terminal font-bold text-sm tracking-widest uppercase">
             acsc<span className="opacity-40 group-hover:opacity-100 transition-opacity">@aiub</span>
           </span>
