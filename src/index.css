@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 14% 93%; /* #f2efeb warm off-white */
+    --foreground: 0 0% 4%; /* #0b0b0b near-black */
+    --card: 30 14% 93%;
+    --card-foreground: 0 0% 4%;
+    --popover: 30 14% 93%;
+    --popover-foreground: 0 0% 4%;
+    --primary: 0 0% 4%;
+    --primary-foreground: 30 14% 93%;
+    --secondary: 30 8% 88%;
+    --secondary-foreground: 0 0% 4%;
+    --muted: 30 8% 88%;
+    --muted-foreground: 0 0% 32%;
+    --accent: 0 0% 4%;
+    --accent-foreground: 30 14% 93%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 30 6% 80%;
+    --input: 30 6% 76%;
+    --ring: 0 0% 4%;
+    --radius: 0.25rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: "IBM Plex Sans", -apple-system, sans-serif;
+  }
+
+  ::selection {
+    background: #0b0b0b;
+    color: #00ff00;
+  }
+}
+
+@layer utilities {
+  .font-terminal {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+  }
+  .font-pixel {
+    font-family: "Silkscreen", "JetBrains Mono", monospace;
+  }
+  .text-term {
+    color: #00ff00;
+  }
+  .bg-ink {
+    background-color: #0b0b0b;
+  }
+  .text-ink {
+    color: #0b0b0b;
+  }
+  .bg-paper {
+    background-color: #f2efeb;
+  }
+  .text-paper {
+    color: #f2efeb;
+  }
+  .blink {
+    animation: blink 1s step-end infinite;
+  }
+  .ghost-heading {
+    @apply font-medium opacity-[0.24] tracking-tight;
+    font-size: clamp(2.4rem, 7vw, 4.3rem);
+    line-height: 0.95;
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 24s linear infinite;
+}
+
+/* accessible focus: terminal-green outline */
+:focus-visible {
+  outline: 2px solid #0b0b0b;
+  outline-offset: 2px;
+}
+.bg-ink :focus-visible {
+  outline-color: #00ff00;
+}
+
+/* thin dark scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f2efeb;
+}
+::-webkit-scrollbar-thumb {
+  background: #0b0b0b;
+}
