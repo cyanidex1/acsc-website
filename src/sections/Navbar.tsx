@@ -33,7 +33,7 @@ export default function Navbar() {
           </span>
         </a>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-8">
           {LINKS.map((l, i) => (
             <a
               key={l.href}
@@ -60,7 +60,7 @@ export default function Navbar() {
             onClick={() => setOpen(!open)}
             aria-expanded={open}
             aria-label={open ? "Close menu" : "Open menu"}
-            className="md:hidden font-terminal text-xs uppercase tracking-widest border border-black/25 px-3 py-2 hover:border-black transition-colors"
+            className="lg:hidden font-terminal text-xs uppercase tracking-widest border border-black/25 px-3 py-2 hover:border-black transition-colors"
           >
             {open ? "Close" : "Menu"}
           </button>
@@ -69,7 +69,7 @@ export default function Navbar() {
 
       {/* mobile overlay */}
       {open && (
-        <nav className="md:hidden fixed inset-0 top-14 z-40 bg-paper border-t border-black/10 flex flex-col">
+        <nav className="lg:hidden fixed inset-0 top-14 z-40 bg-paper border-t border-black/10 flex flex-col">
           {LINKS.map((l, i) => (
             <a
               key={l.href}

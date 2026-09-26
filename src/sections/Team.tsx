@@ -113,7 +113,7 @@ export default function Team() {
               className={m.lead ? "group col-span-2 md:col-span-1 lg:col-span-2" : "group"}
             >
               <div
-                className={`relative overflow-hidden flex flex-col justify-between p-4 md:p-5 h-56 md:h-60 ${
+                className={`relative overflow-hidden flex flex-col justify-between p-4 md:p-5 min-h-56 md:min-h-60 h-full ${
                   m.lead ? "bg-ink border-2 border-[#00ff00]" : "bg-ink"
                 }`}
               >

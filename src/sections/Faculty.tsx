@@ -51,7 +51,7 @@ export default function Faculty() {
           {FACULTY.map((f, i) => (
             <div key={f.email} className={f.lead ? "group col-span-full md:col-span-6" : "group md:col-span-2"}>
               <div
-                className={`relative overflow-hidden flex flex-col justify-between p-4 md:p-5 h-56 md:h-60 ${
+                className={`relative overflow-hidden flex flex-col justify-between p-4 md:p-5 min-h-56 md:min-h-60 h-full ${
                   f.lead ? "bg-ink border-2 border-[#00ff00]" : "bg-ink"
                 }`}
               >
