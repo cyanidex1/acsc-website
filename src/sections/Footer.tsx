@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="px-6 md:px-12">
         <div className="max-w-5xl mx-auto border-t border-black/15 pt-10 pb-14 grid md:grid-cols-3 gap-10">
           <div>
-            <img src={`${import.meta.env.BASE_URL}images/acsc-logo.png`} alt="ACSC logo" className="w-24 mix-blend-multiply" />
+            <img src={`${import.meta.env.BASE_URL}images/acsc-logo.png`} alt="ACSC logo" loading="lazy" className="w-24 mix-blend-multiply" />
             <p className="font-terminal text-xs opacity-50 mt-4 leading-relaxed">
               HACK. LEARN. SECURE.
               <br />
@@ -70,6 +70,7 @@ export default function Footer() {
                 src={`${import.meta.env.BASE_URL}images/osa-logo.png`}
                 alt="OSA — Office of Student Affairs, AIUB"
                 className="h-10 w-auto rounded-md"
+                loading="lazy"
               />
             </a>
             <a
@@ -83,6 +84,7 @@ export default function Footer() {
                 src={`${import.meta.env.BASE_URL}images/aiub-logo.svg`}
                 alt="American International University-Bangladesh"
                 className="h-10 w-auto"
+                loading="lazy"
               />
             </a>
           </div>

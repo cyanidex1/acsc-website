@@ -72,7 +72,7 @@ export default function Hero() {
         >
           <div className="overflow-hidden bg-ink group">
             <img
-              src={`${import.meta.env.BASE_URL}images/hero.png`}
+              src={`${import.meta.env.BASE_URL}images/hero.jpg`}
               alt="Wireframe globe of network particles forming a padlock"
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
             />
